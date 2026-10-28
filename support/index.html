@@ -6,6 +6,7 @@
 <title>Поддержка — Холди</title>
 <meta name="description" content="Как связаться с Холди и ответы на частые вопросы: перенос записей, бюджет, экспорт и стирание данных.">
 <link rel="canonical" href="https://holdie.ru/support/">
+<meta name="color-scheme" content="light">
 <meta name="theme-color" content="#FAF4E8">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -25,6 +26,9 @@
 <header class="site-head">
   <div class="wrap">
     <a class="logo" href="/"><img src="/assets/img/icon-96.png" width="36" height="36" alt="">Холди</a>
+    <nav class="head-nav" aria-label="Разделы">
+      <a href="/support/" aria-current="page">Поддержка</a>
+    </nav>
   </div>
 </header>
 
@@ -33,40 +37,58 @@
     <h1>Поддержка</h1>
     <p class="lead">Есть вопрос или идея&nbsp;— напиши, отвечаю лично.</p>
 
-    <div class="card">
-      <p>Почта</p>
-      <a class="mail" href="mailto:m.nozdryukhin@yandex.com">m.nozdryukhin<wbr>@yandex.com</a>
+    <div class="card contact">
+      <div>
+        <p class="contact-label">Почта</p>
+        <p class="mail">m.nozdryukhin<wbr>@yandex.com</p>
+      </div>
+      <a class="cta" href="mailto:m.nozdryukhin@yandex.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2.6"/><path d="M4 7l8 6 8-6"/></svg>
+        Написать
+      </a>
     </div>
 
-    <h2>Как перенести записи на&nbsp;новый iPhone?</h2>
-    <p>Войди на&nbsp;новом iPhone в&nbsp;тот&nbsp;же Apple ID с&nbsp;включённым iCloud и&nbsp;поставь Холди&nbsp;— записи подтянутся сами. В&nbsp;первый раз это может занять несколько минут.</p>
-
-    <h2>Как поменять бюджет?</h2>
-    <p>Нажми на&nbsp;шестерёнку на&nbsp;главном и&nbsp;открой <span class="path">«Бюджет недели»</span>. Там&nbsp;же темп и&nbsp;«О&nbsp;тебе»: поменяешь рост или вес&nbsp;— бюджет пересчитается.</p>
-
-    <h2>Мёд поднялся над&nbsp;ободком банки&nbsp;— это плохо?</h2>
-    <p>Нет. Так выглядит неделя сверх бюджета. Ничего не&nbsp;переносится: с&nbsp;понедельника&nbsp;— новая банка.</p>
-
-    <h2>Почему поздний ужин попал во&nbsp;вчера?</h2>
-    <p>День в&nbsp;Холди длится до&nbsp;3&nbsp;ночи, чтобы поздний ужин остался в&nbsp;своём дне.</p>
-
-    <h2>Когда приходит напоминание?</h2>
-    <p>Одно тихое напоминание вечером&nbsp;— только если за&nbsp;день нет записей. Время и&nbsp;выключатель&nbsp;— в&nbsp;настройках.</p>
-
-    <h2>Как выгрузить записи?</h2>
-    <p>В&nbsp;настройках есть <span class="path">«Экспорт CSV»</span>: записи и&nbsp;вес, если ты его ведёшь,&nbsp;— в&nbsp;файле, который можно сохранить или отправить.</p>
-
-    <h2>Как стереть всё?</h2>
-    <p>В&nbsp;настройках, последней карточкой, есть <span class="path">«Стереть всё»</span>. Записи, недели, копилка и&nbsp;вес исчезнут с&nbsp;iPhone и&nbsp;из&nbsp;iCloud на&nbsp;всех устройствах. Вернуть их не&nbsp;получится.</p>
+    <h2>Частые вопросы</h2>
+    <div class="faq">
+      <details>
+        <summary>Как перенести записи на&nbsp;новый iPhone?</summary>
+        <p>Войди на&nbsp;новом iPhone в&nbsp;тот&nbsp;же Apple ID с&nbsp;включённым iCloud и&nbsp;поставь Холди&nbsp;— записи подтянутся сами. В&nbsp;первый раз это может занять несколько минут.</p>
+      </details>
+      <details>
+        <summary>Как поменять бюджет?</summary>
+        <p>Нажми на&nbsp;шестерёнку на&nbsp;главном и&nbsp;открой <span class="path">«Бюджет недели»</span>. Там&nbsp;же темп и&nbsp;«О&nbsp;тебе»: поменяешь рост или вес&nbsp;— бюджет пересчитается.</p>
+      </details>
+      <details>
+        <summary>Мёд поднялся над&nbsp;ободком банки&nbsp;— это плохо?</summary>
+        <p>Нет. Так выглядит неделя сверх бюджета. Ничего не&nbsp;переносится: с&nbsp;понедельника&nbsp;— новая банка.</p>
+      </details>
+      <details>
+        <summary>Почему поздний ужин попал во&nbsp;вчера?</summary>
+        <p>День в&nbsp;Холди длится до&nbsp;3&nbsp;ночи, чтобы поздний ужин остался в&nbsp;своём дне.</p>
+      </details>
+      <details>
+        <summary>Когда приходит напоминание?</summary>
+        <p>Одно тихое напоминание вечером&nbsp;— только если за&nbsp;день нет записей. Время и&nbsp;выключатель&nbsp;— в&nbsp;настройках.</p>
+      </details>
+      <details>
+        <summary>Как выгрузить записи?</summary>
+        <p>В&nbsp;настройках есть <span class="path">«Экспорт CSV»</span>: записи и&nbsp;вес, если ты его ведёшь,&nbsp;— в&nbsp;файле, который можно сохранить или отправить.</p>
+      </details>
+      <details>
+        <summary>Как стереть всё?</summary>
+        <p>В&nbsp;настройках, последней карточкой, есть <span class="path">«Стереть всё»</span>. Записи, недели, копилка и&nbsp;вес исчезнут с&nbsp;iPhone и&nbsp;из&nbsp;iCloud на&nbsp;всех устройствах. Вернуть их не&nbsp;получится.</p>
+      </details>
+    </div>
   </div>
 </main>
 
 <footer class="site-foot">
   <div class="wrap">
     <nav aria-label="Документы">
-      <a href="/">Главная</a>
+      <a href="/support/" aria-current="page">Поддержка</a>
       <a href="/privacy/">Конфиденциальность</a>
     </nav>
+    <p>Холди&nbsp;— не&nbsp;медицинское приложение и&nbsp;не&nbsp;даёт советов по&nbsp;здоровью.</p>
     <p>© 2026 ИП Ноздрюхин М.&nbsp;А.</p>
   </div>
 </footer>
