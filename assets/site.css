@@ -111,15 +111,12 @@ h3 { font-size: 21px; line-height: 1.25; letter-spacing: -.01em; }
   text-wrap: pretty;
 }
 
-/* Плашка, а не кнопка: нажимать пока нечего. После релиза здесь — значок App Store. */
-.status {
-  display: inline-flex; align-items: center; gap: 10px;
-  margin: 32px 0 0; padding: 11px 20px 11px 16px; border-radius: 24px;
-  background: var(--fill);
-  font-weight: 700; font-size: 16px; line-height: 1.25;
-}
-.status svg { width: 20px; height: 20px; flex: none; }
-@media (max-width: 359px) { .status { gap: 8px; padding: 10px 16px 10px 13px; font-size: 15px; } }
+/* Официальный значок App Store (Apple Marketing Tools, ru-ru, чёрный) и цена рядом. */
+.get { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; margin: 32px 0 0; }
+.get span { color: var(--muted); font-weight: 700; font-size: 16px; }
+.store { display: inline-block; flex: none; border-radius: 12px; line-height: 0; }
+.store img { width: 168px; height: 56px; }
+.store:active { transform: scale(.97); }
 
 /* Главный экран без телефона: сцена, лента недели и тихая строка — одна SVG. */
 .hero-figure { position: relative; isolation: isolate; margin: 0; }
@@ -265,7 +262,7 @@ h3 { font-size: 21px; line-height: 1.25; letter-spacing: -.01em; }
   .fact + .fact { border-top: 0; border-left: 1.5px solid var(--hair); }
 }
 
-/* Финал: иконка приложения и где его ждать. После релиза — значок App Store. */
+/* Финал: иконка приложения, где его взять и значок App Store. */
 .closing { text-align: center; }
 .closing .wrap { display: flex; flex-direction: column; align-items: center; }
 .closing-icon {
@@ -274,6 +271,7 @@ h3 { font-size: 21px; line-height: 1.25; letter-spacing: -.01em; }
 }
 .closing h2 { margin-top: 28px; }
 .closing p { margin: 12px 0 0; max-width: 36ch; color: var(--muted); font-size: 18px; text-wrap: balance; }
+.closing .store { margin-top: 28px; }
 
 /* ───────── Кнопки ───────── */
 
